@@ -32,6 +32,6 @@ setup(
         'Natural Language :: Japanese'
     ],
     project_urls={
-        'Github': 'https://github.com/bluelief/pkg-init'
-    }
+        'Github': 'https://github.com/bluelief/pkg-init',
+    },
 )
