@@ -5,6 +5,6 @@ __all__ = ["rapidrush"]
 
 from rapidrush.utils.version import get_version
 
-VERSION = (1, 1, 0, "rc", 1)
+VERSION = (1, 1, 0, "stable", 1)
 
 __version__ = get_version(VERSION)
