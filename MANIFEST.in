@@ -1,7 +1,5 @@
 include Makefile
 include MANIFEST.in
 include LICENSE
-graft pkg_init
+graft rapidrush
 graft tests
-global-exclude __pycache__
-global-exclude *.py[co]
