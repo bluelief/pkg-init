@@ -1,13 +1,12 @@
-# Copyright (c) 2019 bluelief.
-# This source code is licensed under the MIT license.
+SOURCEHEADER
 
 .PHONY: test install test_require clean version version_short push pypi
 
-BLACK = black rapidrush; black tests
+BLACK = black PACKAGENAME; black tests
 
 test:
 	@coverage erase
-	@coverage run --source=rapidrush -m unittest discover -v
+	@coverage run --source=PACKAGENAME -m unittest discover -v
 	@coverage report --show-missing
 
 install:
@@ -21,16 +20,16 @@ clean:
 	@find ./ -name "*.pyc" -exec rm -rf "{}" +;
 	@rm -rf build
 	@rm -rf dist
-	@rm -rf rapidrush.egg-info
+	@rm -rf PACKAGENAME.egg-info
 	@rm -rf .tox
 	@rm -rf symbolink
-	@rm -rf .coverage
+	@rm .coverage
 
 version:
 	@python3 -c "import tests"
 
 version_short:
-	@python3 -c "import rapidrush; print(rapidrush.__version__)"
+	@python3 -c "import PACKAGENAME; print(PACKAGENAME.__version__)"
 
 black:
 	$(BLACK)

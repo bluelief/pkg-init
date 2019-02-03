@@ -1,25 +1,25 @@
-# Initialize on a new package
+# Python project template
 
 ## Usage
 
 ```sh
-pip install pkg-init
+pip install rapidrush
 cd /move/to/your/project/directory
-package-init package-name
+rapid-start
 ```
 
 or
 
 ```sh
-git clone https://github.com/bluelief/pkg-init.git
-cd pkg-init
+git clone https://github.com/bluelief/rapidrush.git
+cd rapidrush
 python setup.py install
 cd /move/to/your/project/directory
-package-init package-name
+rapid-start
 ```
 
 
 ## License
 
-Copyright (c) 2018 bluelief.  
+Copyright (c) 2019 bluelief.  
 Licensed under the MIT License.  

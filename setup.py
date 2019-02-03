@@ -1,4 +1,4 @@
-# Copyright (c) 2018 bluelief.
+# Copyright (c) 2019 bluelief.
 # This source code is licensed under the MIT license.
 
 from setuptools import setup, find_packages
@@ -6,22 +6,22 @@ from setuptools import setup, find_packages
 
 entry_points = {
     'console_scripts': [
-        'package-init = pkg_init.core:main'
+        'rapid-start = rapidrush.core:main'
     ]
 }
 
 
-version = __import__('pkg_init').get_version()
+version = __import__('rapidrush').__version__
 
 
 setup(
-    name="pkg-init",
+    name="rapidrush",
     version=version,
-    url='https://github.com/bluelief/pkg-init',
+    url='https://github.com/bluelief/rapidrush',
     author="bluelief",
-    description="Initialize on a new package.",
+    description="Python project template. Rapid start for projects.",
     license="MIT",
-    keywords="python, project",
+    keywords="python, project, template",
     packages=find_packages(),
     include_package_data=True,
     entry_points=entry_points,
@@ -32,6 +32,6 @@ setup(
         'Natural Language :: Japanese'
     ],
     project_urls={
-        'Github': 'https://github.com/bluelief/pkg-init',
+        'Github': 'https://github.com/bluelief/rapidrush',
     },
 )
